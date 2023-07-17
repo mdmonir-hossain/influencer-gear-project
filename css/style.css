@@ -1,0 +1,47 @@
+/* common css */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* nav section css */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.nav-title {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav-icon {
+  width: 20px;
+}
+
+.menu-and-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  gap: 20px;
+}
+.menu-and-icon ul li:hover {
+  color: #ffffff;
+  background-color: #0a0826;
+  border-radius: 5px;
+}
+.nav-icon:hover {
+  background-color: #ffffff;
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+  }
+}
