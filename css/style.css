@@ -8,9 +8,13 @@
 .common-text-color {
   color: #3a3a3a;
 }
+.common-text-center {
+  text-align: center;
+}
 /* nav section css */
 .nav-container {
-  width: 100%;
+  max-width: 1440;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +49,8 @@
 
 /* banner section */
 .banner-section-container {
-  width: 100%;
+  max-width: 1440;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,7 +68,7 @@
   margin-bottom: 10px;
 }
 .banner-section-image img {
-  width: 90%;
+  width: 100%;
 }
 
 .pre-book {
@@ -73,7 +78,46 @@
   border: none;
   color: #ffffff;
 }
-
+.logo-section {
+  margin-top: 50px;
+  max-width: 1440px;
+}
+.logo-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.popular-collection {
+  max-width: 1440px;
+  margin-top: 100px;
+}
+.fa-star {
+  color: #fb8200;
+}
+.popular-collection-container {
+  width: 70%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  gap: 10px;
+}
+.popular-collection-card {
+  width: 90%;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.popular-collection-card img {
+  width: 100%;
+  padding: 10px;
+}
 /* Responsive small device */
 @media screen and (max-width: 576px) {
   .nav-container {
@@ -83,7 +127,6 @@
   .banner-section-container {
     width: 100%;
     flex-direction: column-reverse;
-    
   }
 
   .banner-section-text {
@@ -94,5 +137,14 @@
   .banner-section-image {
     width: 100%;
     background-size: contain;
+  }
+
+  .popular-collection-container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .popular-collection-card {
+    width: 100%
   }
 }
